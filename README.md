@@ -13,8 +13,8 @@
   </p>
 
   <p>
-    <a href="https://YOUR-STORYBOOK-URL">Storybook</a> ·
-    <a href="https://YOUR-DASHBOARDS-URL">Dashboards demo</a>
+    <a href="https://harbor-chi-five.vercel.app/">Storybook</a> ·
+    <a href="https://dashboards-omega-bay.vercel.app/">Dashboards demo</a>
   </p>
 
   <br />
