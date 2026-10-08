@@ -21,6 +21,23 @@ export default defineConfig({
           // See options at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon#storybooktest
           storybookTest({ configDir: path.join(dirname, '.storybook') }),
         ],
+        // Keep one copy of React, and prebundle everything up front. On a clean machine
+        // (like CI) Vite otherwise discovers some packages mid-run, re-optimizes, and
+        // leaves a story holding a stale second copy of React.
+        resolve: {
+          dedupe: ['react', 'react-dom'],
+        },
+        optimizeDeps: {
+          include: [
+            'react',
+            'react-dom',
+            'react/jsx-runtime',
+            'react/jsx-dev-runtime',
+            'react-dom/client',
+            '@radix-ui/react-dialog',
+            '@radix-ui/react-select',
+          ],
+        },
         test: {
           name: 'storybook',
           browser: {
