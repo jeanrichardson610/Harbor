@@ -2,7 +2,7 @@
   <br />
 
   <p align="center">
-  <img src="./docs/preview.png" width="900"/>
+  <img src="apps/docs/preview.png" width="900"/>
   </p>
 
   <h1>⚓ Harbor</h1>
