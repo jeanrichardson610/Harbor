@@ -1,0 +1,186 @@
+{
+  "light": {
+    "color": {
+      "bg": {
+        "canvas": {
+          "$value": "{color.neutral.50}"
+        },
+        "surface": {
+          "$value": "{color.neutral.0}"
+        },
+        "input": {
+          "$value": "{color.neutral.0}"
+        },
+        "inverse": {
+          "$value": "{color.neutral.900}"
+        }
+      },
+      "text": {
+        "primary": {
+          "$value": "{color.neutral.900}"
+        },
+        "muted": {
+          "$value": "{color.neutral.500}"
+        },
+        "danger": {
+          "$value": "{color.red.600}"
+        },
+        "inverse": {
+          "$value": "{color.neutral.50}"
+        }
+      },
+      "border": {
+        "default": {
+          "$value": "{color.neutral.200}"
+        },
+        "input": {
+          "$value": "{color.neutral.500}"
+        }
+      },
+      "focus": {
+        "ring": {
+          "$value": "{color.blue.600}"
+        }
+      },
+      "action": {
+        "primary": {
+          "bg": {
+            "$value": "{color.blue.600}"
+          },
+          "fg": {
+            "$value": "{color.neutral.0}"
+          }
+        },
+        "secondary": {
+          "bg": {
+            "$value": "{color.blue.50}"
+          },
+          "fg": {
+            "$value": "{color.blue.700}"
+          }
+        }
+      },
+      "feedback": {
+        "success": {
+          "bg": {
+            "$value": "{color.green.50}"
+          },
+          "fg": {
+            "$value": "{color.green.700}"
+          }
+        },
+        "warning": {
+          "bg": {
+            "$value": "{color.amber.50}"
+          },
+          "fg": {
+            "$value": "{color.amber.700}"
+          }
+        },
+        "danger": {
+          "bg": {
+            "$value": "{color.red.600}"
+          },
+          "fg": {
+            "$value": "{color.neutral.0}"
+          },
+          "soft": {
+            "$value": "{color.red.50}"
+          }
+        }
+      }
+    }
+  },
+  "dark": {
+    "color": {
+      "bg": {
+        "canvas": {
+          "$value": "{color.neutral.900}"
+        },
+        "surface": {
+          "$value": "{color.neutral.800}"
+        },
+        "input": {
+          "$value": "{color.neutral.900}"
+        },
+        "inverse": {
+          "$value": "{color.neutral.50}"
+        }
+      },
+      "text": {
+        "primary": {
+          "$value": "{color.neutral.50}"
+        },
+        "muted": {
+          "$value": "{color.neutral.400}"
+        },
+        "danger": {
+          "$value": "{color.red.300}"
+        },
+        "inverse": {
+          "$value": "{color.neutral.900}"
+        }
+      },
+      "border": {
+        "default": {
+          "$value": "{color.neutral.700}"
+        },
+        "input": {
+          "$value": "{color.neutral.400}"
+        }
+      },
+      "focus": {
+        "ring": {
+          "$value": "{color.blue.300}"
+        }
+      },
+      "action": {
+        "primary": {
+          "bg": {
+            "$value": "{color.blue.500}"
+          },
+          "fg": {
+            "$value": "{color.neutral.900}"
+          }
+        },
+        "secondary": {
+          "bg": {
+            "$value": "{color.blue.900}"
+          },
+          "fg": {
+            "$value": "{color.blue.100}"
+          }
+        }
+      },
+      "feedback": {
+        "success": {
+          "bg": {
+            "$value": "{color.green.900}"
+          },
+          "fg": {
+            "$value": "{color.green.300}"
+          }
+        },
+        "warning": {
+          "bg": {
+            "$value": "{color.amber.900}"
+          },
+          "fg": {
+            "$value": "{color.amber.300}"
+          }
+        },
+        "danger": {
+          "bg": {
+            "$value": "{color.red.300}"
+          },
+          "fg": {
+            "$value": "{color.neutral.900}"
+          },
+          "soft": {
+            "$value": "{color.red.900}"
+          }
+        }
+      }
+    }
+  }
+}

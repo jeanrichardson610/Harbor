@@ -1,0 +1,15 @@
+.hb-dialog__overlay { position: fixed; inset: 0; background: var(--color-scrim); z-index: 40; }
+.hb-dialog {
+  position: fixed; z-index: 41; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  width: min(440px, calc(100vw - 32px)); padding: var(--space-5); border-radius: var(--dialog-radius);
+  background: var(--color-bg-surface); color: var(--color-text-primary); border: 1px solid var(--color-border-default); box-shadow: var(--shadow-lg);
+}
+.hb-dialog__title { margin: 0 var(--space-6) var(--space-2) 0; font: 700 1.25rem/1.2 var(--font-display); }
+.hb-dialog__desc { margin: 0 0 var(--space-4); color: var(--color-text-muted); }
+.hb-dialog__footer { display: flex; justify-content: flex-end; gap: var(--space-3); margin-top: var(--space-5); }
+.hb-dialog__close {
+  position: absolute; top: var(--space-3); right: var(--space-3); width: 44px; height: 44px; border: 0; border-radius: var(--radius-md);
+  background: transparent; color: var(--color-text-muted); font-size: 1.5rem; cursor: pointer;
+}
+.hb-dialog__close:hover { background: var(--color-bg-canvas); }
+.hb-dialog__close:focus-visible { outline: 3px solid var(--color-focus-ring); }

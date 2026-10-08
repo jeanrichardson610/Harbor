@@ -1,0 +1,33 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Foundations/Spacing, shape and elevation" />
+
+# Spacing, shape and elevation
+
+## Spacing
+
+A 4px base unit with seven steps. Pick the step, never a raw pixel value.
+
+| Token | Value | |
+| --- | --- | --- |
+| `--space-1` | 4px | <span style={{ display: 'block', height: 12, width: 'var(--space-1)', background: 'var(--color-action-primary-bg)' }} /> |
+| `--space-2` | 8px | <span style={{ display: 'block', height: 12, width: 'var(--space-2)', background: 'var(--color-action-primary-bg)' }} /> |
+| `--space-3` | 12px | <span style={{ display: 'block', height: 12, width: 'var(--space-3)', background: 'var(--color-action-primary-bg)' }} /> |
+| `--space-4` | 16px | <span style={{ display: 'block', height: 12, width: 'var(--space-4)', background: 'var(--color-action-primary-bg)' }} /> |
+| `--space-5` | 24px | <span style={{ display: 'block', height: 12, width: 'var(--space-5)', background: 'var(--color-action-primary-bg)' }} /> |
+| `--space-6` | 32px | <span style={{ display: 'block', height: 12, width: 'var(--space-6)', background: 'var(--color-action-primary-bg)' }} /> |
+| `--space-7` | 48px | <span style={{ display: 'block', height: 12, width: 'var(--space-7)', background: 'var(--color-action-primary-bg)' }} /> |
+
+Related items sit 8 to 12px apart. Separate groups with 24px or more.
+
+## Radius
+
+Controls (buttons, fields, alerts) use `--radius-md`. Containers (cards, dialogs) use `--radius-lg`. Small details use `--radius-sm`.
+
+## Elevation
+
+One shadow, `--shadow-lg`, used only for things that float above the page: dialogs, menus, and toasts. Cards sit flat and use a border.
+
+## Touch targets
+
+Every interactive control is at least 44px tall.

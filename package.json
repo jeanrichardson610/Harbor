@@ -1,0 +1,17 @@
+{
+  "name": "harbor",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "build:tokens": "pnpm --filter @harbor/tokens build",
+    "build:ui": "pnpm build:tokens && pnpm --filter @harbor/ui build",
+    "dev": "pnpm build:tokens && pnpm --filter docs storybook",
+    "build": "pnpm build:ui && pnpm --filter docs build",
+    "test:contrast": "pnpm --filter @harbor/tokens test",
+    "test:a11y": "pnpm --filter docs test:a11y"
+  },
+  "packageManager": "pnpm@9.12.0",
+  "devDependencies": {
+    "vite": "^6.4.3"
+  }
+}

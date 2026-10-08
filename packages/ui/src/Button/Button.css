@@ -1,0 +1,28 @@
+.hb-btn {
+  font: 600 0.95rem var(--font-body);
+  height: var(--button-height-md);
+  padding: 0 var(--button-padding-x-md);
+  border-radius: var(--button-radius);
+  border: 1px solid transparent;
+  cursor: pointer;
+  position: relative;
+  transition: filter var(--motion-duration-base), transform var(--motion-duration-fast);
+}
+.hb-btn--sm { height: var(--button-height-sm); padding: 0 var(--button-padding-x-sm); font-size: 0.875rem; }
+.hb-btn:focus-visible { outline: 3px solid var(--color-focus-ring); outline-offset: 2px; }
+.hb-btn:active:not(:disabled) { transform: translateY(1px); }
+.hb-btn--primary { background: var(--color-action-primary-bg); color: var(--color-action-primary-fg); }
+.hb-btn--primary:hover:not(:disabled) { filter: brightness(1.08); }
+.hb-btn--secondary { background: var(--color-action-secondary-bg); color: var(--color-action-secondary-fg); }
+.hb-btn--ghost { background: transparent; color: var(--color-text-primary); border-color: var(--color-border-default); }
+.hb-btn--ghost:hover:not(:disabled) { background: var(--color-bg-canvas); }
+.hb-btn--danger { background: var(--color-feedback-danger-bg); color: var(--color-feedback-danger-fg); }
+.hb-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.hb-btn[data-loading] { cursor: progress; opacity: 1; color: transparent; }
+.hb-btn[data-loading]::after {
+  content: ''; position: absolute; inset: 0; margin: auto; width: 18px; height: 18px;
+  border: 2px solid var(--color-action-primary-fg); border-right-color: transparent; border-radius: 50%;
+  animation: hb-spin 0.7s linear infinite;
+}
+@keyframes hb-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .hb-btn, .hb-btn::after { transition: none; animation-duration: 2s; } }

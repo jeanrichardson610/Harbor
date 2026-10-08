@@ -1,0 +1,10 @@
+.hb-tabs__list { display: flex; gap: var(--space-2); border-bottom: 1px solid var(--color-border-default); overflow-x: auto; }
+.hb-tabs__tab {
+  min-height: 44px; padding: 0 var(--space-4); background: none; border: 0; border-bottom: 3px solid transparent; margin-bottom: -1px;
+  font: 600 0.95rem var(--font-body); color: var(--color-text-muted); cursor: pointer; white-space: nowrap;
+}
+.hb-tabs__tab:hover:not(:disabled) { color: var(--color-text-primary); }
+.hb-tabs__tab[aria-selected='true'] { color: var(--color-action-secondary-fg); border-bottom-color: var(--color-action-primary-bg); }
+.hb-tabs__tab:disabled { opacity: 0.45; cursor: not-allowed; }
+.hb-tabs__tab:focus-visible, .hb-tabs__panel:focus-visible { outline: 3px solid var(--color-focus-ring); outline-offset: -3px; }
+.hb-tabs__panel { padding: var(--space-4) 0; color: var(--color-text-primary); }

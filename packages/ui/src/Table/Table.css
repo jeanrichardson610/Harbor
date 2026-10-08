@@ -1,0 +1,9 @@
+.hb-table-wrap { overflow-x: auto; border: 1px solid var(--color-border-default); border-radius: var(--card-radius); background: var(--color-bg-surface); }
+.hb-table-wrap:focus-visible { outline: 3px solid var(--color-focus-ring); outline-offset: 2px; }
+.hb-table { width: 100%; border-collapse: collapse; color: var(--color-text-primary); font-size: var(--font-size-sm); }
+.hb-table caption { text-align: left; padding: var(--space-4); font: 700 var(--font-size-md) var(--font-display); }
+.hb-table th, .hb-table td { padding: var(--space-3) var(--space-4); text-align: left; border-top: 1px solid var(--color-border-default); white-space: nowrap; }
+.hb-table th { font-weight: 600; color: var(--color-text-muted); }
+.hb-table [data-align='end'] { text-align: right; font-variant-numeric: tabular-nums; }
+.hb-table tbody tr:hover { background: var(--color-bg-canvas); }
+.hb-table__empty { text-align: center !important; color: var(--color-text-muted); padding: var(--space-6) var(--space-4) !important; white-space: normal !important; }

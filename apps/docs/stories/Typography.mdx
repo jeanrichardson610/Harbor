@@ -1,0 +1,25 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Foundations/Typography" />
+
+# Typography
+
+Two typefaces with clear jobs. **Bricolage Grotesque** is for headings and titles. **Public Sans** is for interface and body text. Both load from Google Fonts, with system fallbacks.
+
+## Scale
+
+| Token | Size | Sample |
+| --- | --- | --- |
+| `--font-size-3xl` | 3.5rem | <span style={{ font: '700 var(--font-size-3xl)/1 var(--font-display)' }}>Plan the voyage</span> |
+| `--font-size-2xl` | 2.5rem | <span style={{ font: '700 var(--font-size-2xl)/1.1 var(--font-display)' }}>Crew schedule</span> |
+| `--font-size-xl` | 1.75rem | <span style={{ font: '700 var(--font-size-xl)/1.1 var(--font-display)' }}>Cargo manifest</span> |
+| `--font-size-lg` | 1.25rem | <span style={{ font: '700 var(--font-size-lg)/1.2 var(--font-display)' }}>Card title</span> |
+| `--font-size-md` | 1rem | <span style={{ font: '400 var(--font-size-md)/1.5 var(--font-body)' }}>Body text for reading and forms.</span> |
+| `--font-size-sm` | 0.875rem | <span style={{ font: '400 var(--font-size-sm)/1.5 var(--font-body)' }}>Table cells, helper text, captions.</span> |
+
+## Guidelines
+
+- Keep body lines under 65 characters.
+- Use sentence case for every label, button, and heading.
+- Never go below `--font-size-sm` for text people need to read.
+- Sizes are in `rem`, so they follow the person's browser setting.

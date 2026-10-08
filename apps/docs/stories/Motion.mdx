@@ -1,0 +1,19 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Foundations/Motion" />
+
+# Motion
+
+Motion shows what changed. It never decorates.
+
+| Token | Value | Use |
+| --- | --- | --- |
+| `--motion-duration-fast` | 100ms | Press feedback |
+| `--motion-duration-base` | 150ms | Hover, toggles, color changes |
+| `--motion-duration-slow` | 250ms | Reserved for larger transitions |
+
+## Rules
+
+- Respond to a person's action. Do not animate on page load.
+- Every animation honors `prefers-reduced-motion`.
+- Nothing flashes more than three times per second.

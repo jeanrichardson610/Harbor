@@ -1,0 +1,29 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Foundations/Principles" />
+
+# Harbor principles
+
+Harbor is a token-driven design system. These principles settle disagreements when two good options conflict.
+
+**Clear before clever.** Name things by what users understand. A button says "Save changes", not "Submit".
+
+**Accessible by default.** Every component ships with visible focus, 44px touch targets, measured WCAG AA contrast in both themes, and keyboard support. Contrast is checked on every build and axe runs on every story in CI.
+
+**Tokens, not values.** Components take color from semantic and component tokens, and size, type, and radius from the shared scales. No component contains a raw color or pixel value, so a theme change never needs a component change.
+
+**One obvious way.** Each need has one component and one variant. If two components could do the job, we merge them or document when to use which.
+
+**Failure is part of the design.** Every component documents its loading, empty, disabled, and error states.
+
+## Token tiers
+
+| Tier | Example | Used by |
+| --- | --- | --- |
+| Primitive | `--color-blue-600`, `--space-4` | Semantic tokens, and components for scales (space, type, radius) |
+| Semantic | `--color-action-primary-bg` | Components and apps |
+| Component | `--button-height-md` | One component |
+
+## What's next
+
+See Foundations for color, type, spacing and motion, and Components for usage, states, and keyboard behavior.

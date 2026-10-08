@@ -1,0 +1,44 @@
+{
+  "button": {
+    "radius": {
+      "$value": "{radius.md}"
+    },
+    "height": {
+      "md": {
+        "$value": "44px"
+      },
+      "sm": {
+        "$value": "36px"
+      }
+    },
+    "padding-x": {
+      "md": {
+        "$value": "{space.5}"
+      },
+      "sm": {
+        "$value": "{space.4}"
+      }
+    }
+  },
+  "field": {
+    "height": {
+      "$value": "44px"
+    },
+    "radius": {
+      "$value": "{radius.md}"
+    }
+  },
+  "dialog": {
+    "radius": {
+      "$value": "{radius.lg}"
+    }
+  },
+  "card": {
+    "radius": {
+      "$value": "{radius.lg}"
+    },
+    "padding": {
+      "$value": "{space.5}"
+    }
+  }
+}

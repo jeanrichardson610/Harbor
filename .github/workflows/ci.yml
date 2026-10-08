@@ -1,0 +1,15 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install
+      - run: pnpm test:contrast          # fails if any color pairing misses WCAG AA
+      - run: pnpm build                  # tokens, library, static Storybook
+      - run: pnpm --filter docs exec playwright install --with-deps chromium
+      - run: pnpm test:a11y              # axe on every story

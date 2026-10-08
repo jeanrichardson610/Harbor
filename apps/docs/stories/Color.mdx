@@ -1,0 +1,34 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { Swatches, ContrastTable } from './Tokens';
+
+<Meta title="Foundations/Color" />
+
+# Color
+
+Color is defined in three tiers. Primitives are the raw palette (`--color-blue-600`). **Semantic tokens** give a color a job (`--color-action-primary-bg`). Components use semantic tokens, so a theme is a different mapping from semantic tokens to primitives, with no changes to any component.
+
+## Rules
+
+- Use **semantic** tokens in product code, never primitives.
+- Color never carries meaning alone. Every status color is paired with a word or an icon.
+- Danger red is reserved for errors and destructive actions.
+
+## Light theme
+
+<Swatches theme="light" />
+
+## Dark theme
+
+<Swatches theme="dark" />
+
+## Measured contrast
+
+These ratios are computed from the token values by `packages/tokens/contrast.mjs` on every build. The build fails if any pairing drops below its target: **4.5:1** for text and **3:1** for component boundaries and focus indicators (WCAG 2.2 AA).
+
+### Light
+
+<ContrastTable theme="light" />
+
+### Dark
+
+<ContrastTable theme="dark" />
